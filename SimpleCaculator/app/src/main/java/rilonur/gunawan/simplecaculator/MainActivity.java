@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
             hasil = angka1 + angka2;
         } else if (opr == R.id.minus){
             hasil = angka1 - angka2;
+        }else if (opr == R.id.kali){
+            hasil = angka1 * angka2;
+        }else if (opr == R.id.bagi){
+            hasil = angka1 / angka2;
         }
         result.setText(Double.toString(hasil));
     }
