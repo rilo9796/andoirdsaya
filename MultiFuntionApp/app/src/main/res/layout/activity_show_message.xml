@@ -7,6 +7,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="rilonur.gunawa.multifuntionapp.ShowMassege">
+    tools:context=".ShowMessage">
+
+    <TextView
+        android:id="@+id/message_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:text="Contoh Text"
+        android:textColor="@color/colorPrimaryDark"/>
 
 </RelativeLayout>
