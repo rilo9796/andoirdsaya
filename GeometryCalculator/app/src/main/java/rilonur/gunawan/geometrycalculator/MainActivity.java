@@ -1,5 +1,6 @@
 package rilonur.gunawan.geometrycalculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-
+    public final static  String SHOW = "rilonur.gunawan.geometrycalculator.Main";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
             TextView result = (TextView) findViewById(R.id.result);
         result.setText(hasil);
+        Intent intent = new Intent(this, ShowHitung.class);
+        intent.putExtra(SHOW,result.getText().toString());
+        startActivity(intent);
     }
 
     @Override
@@ -107,6 +111,5 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-
     }
 }
