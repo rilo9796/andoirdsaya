@@ -20,7 +20,7 @@
         android:layout_alignParentRight="true"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"/>/>
+        android:inputType="numberDecimal"/>
     <TextView
     android:id="@+id/txt1"
     android:layout_below="@id/geometry"
