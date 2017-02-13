@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rilonur.gunawan.aplikasikeuangan.Form">
+
+    <TextView
+        android:id="@+id/nama"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Traksaksi"
+        android:textStyle="bold"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+    <EditText
+        android:id="@+id/txt_nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/jenis"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Transaksi"
+        android:textStyle="bold"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+    <Spinner
+        android:id="@+id/txt_jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <TextView
+        android:id="@+id/jumlah"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Transaksi"
+        android:textStyle="bold"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+    <EditText
+        android:id="@+id/txt_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/keterangan"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keterangan Transaksi"
+        android:textStyle="bold"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+    <EditText
+        android:id="@+id/txt_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/calculate"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:onClick="saveTranskasi"/>
+
+</LinearLayout>
