@@ -2,10 +2,12 @@ package rilonur.gunawan.aplikasikeuangan;
 
 import android.provider.BaseColumns;
 
+import java.io.Serializable;
+
 /**
  * Created by D2J-00 on 13/02/2017.
  */
-public class Transaksi implements BaseColumns{
+public class Transaksi implements BaseColumns, Serializable{
 
     public String nama;
     public int jenis;
